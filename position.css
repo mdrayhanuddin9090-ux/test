@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 48px;
+    font-size: 1rem;
+}
+header{
+    background-color: #1A0B2E;
+    border-bottom: 1px solid #9100f897;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.logo{
+    color: white;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.first-btn button{
+    padding: 10px 20px;
+    border-radius: 48px;
+    font-size: 1rem;
+}
+.banner{
+    background: url(hero-bg.png);
+    background-position: center;
+    padding-top: 101px;
+}
+.banner-container{
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 101px;
+}
+.banner-img{
+    position: relative;
+    margin-bottom: 40px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+.mic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+span{
+    background-color: #00FF88;
+    box-shadow: 0px 0px 20px #00FF88;
+    padding: 8px 13px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15px;
+    left: 355px;
+    font-weight: 600;
+    
+}
+.banner-text{
+    color: white;
+}
+.banner-text h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.banner-text p{
+    margin-bottom: 24px;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+@media screen and (max-width:576px) {
+    nav{
+        width: 90%;
+    }
+    .menu ul{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .circle{
+       max-width:65%;
+       width: 300px;
+    }
+    .mic{
+        max-width: 30%;
+        width: 22%;
+    }
+    span{
+    top: 15px;
+    left: 300px;
+    }
+}
